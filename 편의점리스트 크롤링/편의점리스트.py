@@ -17,11 +17,8 @@ def get_data():
     data = []
     driver.switch_to.frame(driver.find_element_by_id("tgdc"))
     driver.switch_to.frame(driver.find_element_by_id("map"))
-    data.append(driver.find_element_by_xpath('/html/body/table/tbody/tr[1]/td/table[1]/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[1]/font').text)
-    data.append(driver.find_element_by_xpath('/html/body/table/tbody/tr[1]/td/table[1]/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/font/b').text)
-    data.append(driver.find_element_by_xpath('/html/body/table/tbody/tr[1]/td/table[1]/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[3]/font').text)
-    data.append(driver.find_element_by_xpath('/html/body/table/tbody/tr[1]/td/table[1]/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[4]/font').text)
-    data.append(driver.find_element_by_xpath('/html/body/table/tbody/tr[1]/td/table[1]/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[5]/font').text)
+    for i in range(1,6):
+        data.append(driver.find_element_by_xpath('/html/body/table/tbody/tr[1]/td/table[1]/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[{}]/font'.format(i)).text)
     driver.switch_to.default_content()
     return data
 
