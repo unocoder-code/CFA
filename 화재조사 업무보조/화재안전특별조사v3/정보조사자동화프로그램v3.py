@@ -960,8 +960,8 @@ def log_in():
     try:
         driver.find_element_by_id("_easyui_textbox_input4").click()
         driver.find_element_by_id("_easyui_combobox_i1_12").click()
-        driver.find_element_by_id('_easyui_textbox_input1').send_keys('0105108374311')
-        driver.find_element_by_id('_easyui_textbox_input2').send_keys('0000')
+        driver.find_element_by_id('_easyui_textbox_input1').send_keys('')
+        driver.find_element_by_id('_easyui_textbox_input2').send_keys('')
         time.sleep(0.5)
         driver.find_element_by_id("btnLogin").click()
         time.sleep(1)
