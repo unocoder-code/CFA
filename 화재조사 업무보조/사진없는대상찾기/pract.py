@@ -60,8 +60,8 @@ def log_in():
     #로그인
     click_mouse_id("_easyui_textbox_input4")
     click_mouse_id("_easyui_combobox_i1_12")
-    send_key_id('_easyui_textbox_input1','0105108374311')
-    send_key_id('_easyui_textbox_input2','0000')
+    send_key_id('_easyui_textbox_input1','')
+    send_key_id('_easyui_textbox_input2','')
     time.sleep(0.5)
     click_mouse_id("btnLogin")
     time.sleep(1)
