@@ -43,8 +43,8 @@ def 점검자서명1():
         click('//*[@id="tab9_iptr_type-1"]/option[4]')
         click('//*[@id="tab9_iptr_type-2"]/option[4]')
         time.sleep(0.1)
-        sendkey('//*[@id="tab9_iptn-1"]','이대진')
-        sendkey('//*[@id="tab9_iptn-2"]','송병진')
+        sendkey('//*[@id="tab9_iptn-1"]','')
+        sendkey('//*[@id="tab9_iptn-2"]','')
         time.sleep(0.1)
     except:
         pass
@@ -57,8 +57,8 @@ def 점검자서명2():
         click('//*[@id="tab9_iptr_type-1"]/option[4]')
         click('//*[@id="tab9_iptr_type-2"]/option[4]')
         time.sleep(0.1)
-        sendkey('//*[@id="tab9_iptn-1"]','신학균')
-        sendkey('//*[@id="tab9_iptn-2"]','정조영')
+        sendkey('//*[@id="tab9_iptn-1"]','')
+        sendkey('//*[@id="tab9_iptn-2"]','')
         time.sleep(0.1)
     except:
         pass
